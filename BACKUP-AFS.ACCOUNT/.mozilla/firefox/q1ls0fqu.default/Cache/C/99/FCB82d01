@@ -1,0 +1,404 @@
+<html xmlns:xalan-nodeset="org.apache.xalan.xslt.extensions.Nodeset" xmlns:java="http://xml.apache.org/xslt/java">
+    <news3col>
+	<head>
+            <title>NJIT - PublicInfo: NJIT Newsroom Home Page</title>
+            <meta content="NJIT Newsroom" name="description">
+            <meta content="NJIT, New Jersey Institute of Technology, news, media, press releases, newsroom, public relations, University Communications" name="keywords">
+            <!--googleoff:all-->
+            <meta content="crovetto" name="author">
+            <!--googleon:all-->
+
+            <meta content="University Communications" name="department">
+            <meta name="last-modified" content="Tue, 17 Sep 2013 12:00:00 EDT" />            <title>NJIT</title>
+	<link rel="stylesheet" type="text/css" href="/uicomponents/css/ostyleinfo.css">
+	<link rel="stylesheet" type="text/css" href="/uicomponents/css/cstyleinfo.css">
+<script language="javascript">
+ 		rolls = new Array (5);
+		rolls[0] = new Image(); rolls[0].src = "/uicomponents/images/Sub1r.gif"; //rollover image
+		rolls[1] = new Image(); rolls[1].src = "/uicomponents/images/Sub2r.gif"; //rollover image
+		rolls[2] = new Image(); rolls[2].src = "/uicomponents/images/Sub3r.gif"; //rollover image
+		rolls[3] = new Image(); rolls[3].src = "/uicomponents/images/Sub4r.gif"; //rollover image
+		rolls[4] = new Image(); rolls[4].src = "/uicomponents/images/submyr.gif"; //rollover image
+ 		ups = new Array (5);
+		ups[0] = "/uicomponents/images/Sub1.gif";
+		ups[1] = "/uicomponents/images/Sub2.gif";
+		ups[2] = "/uicomponents/images/Sub3.gif";
+		ups[3] = "/uicomponents/images/Sub4.gif";
+		ups[4] = "/uicomponents/images/submy.gif";
+
+var NS = (document.layers) ? 1:0
+var IE = (document.all) ? 1:0
+var NS6 = (document.getElementById) ? 1:0
+ function showLayer(lyr) {
+        if (IE) document.all[lyr].style.visibility = "visible";
+        else if (NS) document.layers[lyr].visibility = "visible";
+        else if (NS6) document.getElementById(lyr).style.visibility = "visible";
+}
+ function hideLayer(lyr) {
+        if (IE) document.all[lyr].style.visibility = "hidden";
+        else if (NS) document.layers[lyr].visibility = "hidden";
+        else if (NS6) document.getElementById(lyr).style.visibility = "hidden";
+}
+ function show(lnum) {
+        showLayer('ly' + lnum);
+        return true;
+}
+ function hide(lnum) {
+        hideLayer('ly' + lnum);
+        return true;
+}
+ function openPopup(url) {
+		myPopup=window.open(url,"NJIT", "resizable=yes,toolbar=yes,scrollbars=yes,menubar=yes,status=yes");
+		myPopup.focus();
+}
+</script>
+
+<script language="javascript" src='/uicomponents/scripts/rollover.js'></script>
+<script language="javascript" src='/uicomponents/scripts/dropsub.js'></script>
+
+<script language="javascript" src='/uicomponents/scripts/njitscript.js'></script>            <script LANGUAGE="JavaScript">function linkPopUp(url) {
+			var newURL = url;
+			var currentURL = top.document.location.href;
+			var firstChar = url.charAt(0);
+
+			if(firstChar =="/"){
+				sindex = currentURL.indexOf("/",7)
+				if(sindex >0){
+					url1 = currentURL.substring(0, sindex);
+					newURL = url1 + url;
+				}
+			}
+				linkPopUpWindow=window.open(newURL,"NJIT", "resizable=yes,toolbar=yes,scrollbars=yes,menubar=yes,status=yes");
+				linkPopUpWindow.focus();
+		}
+		</script>
+            <style type="text/css">
+					.homemenu1 {FONT-SIZE: 12px; COLOR: #494977; FONT-WEIGHT: bold; FONT-FAMILY:Arial; }
+					.homemenu1 A:link {FONT-SIZE: 12px; COLOR: #494977; TEXT-DECORATION: none; }
+					.homemenu1 A:visited {FONT-SIZE: 12px; COLOR: #494977; TEXT-DECORATION: none;}
+					.homemenu1 A:hover {FONT-SIZE: 12px; COLOR: #D92424; TEXT-DECORATION: none; }
+					.imgmargintop {margin-top: 5px; }
+					.uportal-channel-text a:link{color: #a03a33;}
+					.uportal-channel-text a:visited{color: #a03a33;}
+				</style>
+            <link rel="stylesheet" type="text/css" href="http://cp3.njit.edu/cp/content/style.css" /> 
+            <link rel="stylesheet" type="text/css" href="http://cp3.njit.edu/media/org/jasig/portal/layout/dlm/skins/classic/skin/portal.css" /> 
+        </head>
+	<body rightmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#ffffff">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+
+                    <td width="5"><img width="5" src="/uicomponents/images/1x1.gif" height="1" border="0"></td><td valign="top" align="left">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 17, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-291.php" target="_blank">NJIT Civil Engineers Tackle Hackensack River Flood Waters With $289,000 DEP Grant </a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-291_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>The New Jersey Department of Environmental Protection (NJDEP) has awarded NJIT a $289,000 grant to investigate alternative measures for flood mitigation in the Hackensack/Moonachie/Little Ferry area.&nbsp; The effort will enhance rather than duplicate any on-going efforts by the US Army Corps of Engineers and other organizations.&nbsp; NJIT&rsquo;s newest center, the Flood Mitigation Engineering Resource Center will handle the work.&nbsp;<a href="http://www.njit.edu/news/2013/2013-291.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 16, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-290.php" target="_blank">Department of Civil and Environmental Engineering Fall Seminar Series</a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-290_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>The department of civil and environmental engineering begins the fall seminar series today with &ldquo;Overview of U.S. DOT Connected Vehicle Program&rdquo; by Joyoung Lee, assistant professor in the department.&nbsp;<a href="http://www.njit.edu/news/2013/2013-290.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 16, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-289.php" target="_blank">Ribbon Cutting for the Warren Street Village Set for September 18</a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-289_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>A ribbon cutting for the Warren Street Village: Honors Residential Hall and Greek Houses will be held on Wednesday, September 18, 2013 at 11 a.m. at 156-182 Warren Street, Newark.&nbsp;<a href="http://www.njit.edu/news/2013/2013-289.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 16, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-288.php" target="_blank">NJ State House Honors NJIT Student Inventors of Autism App </a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-288_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>NJIT Distinguished Professor Atam P. Dhawan, PhD,&nbsp; recently joined the autism community at the NJ State House to be recognized for improving public and private autism services.&nbsp; Dhawan, a noted electrical engineer and inventor in his own right, who heads NJIT&rsquo;s Interdisciplinary Design Studio (IDS) program, is also executive director of undergraduate research and innovation at NJIT.&nbsp; The IDS program is offered to Albert Dorman Honors College students at NJIT.&nbsp;&nbsp;&nbsp;<a href="http://www.njit.edu/news/2013/2013-288.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 13, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-287.php" target="_blank">NJIT Celebration Set for Nov. 8, 2013 </a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-287_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>NJIT will hold Celebration, its annual black-tie benefit dinner, on Nov. 8, 2013 at the Pleasantdale Chateau, West Orange.&nbsp; Entertainment will feature New Jersey&rsquo;s Golden Girl Dionne Warwick, celebrating 50 years of musical success.&nbsp; Event proceeds will provide endowed scholarship support.&nbsp;&nbsp;<a href="http://www.njit.edu/news/2013/2013-287.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 13, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-286.php" target="_blank">Fall 2013 Mechanical and Industrial Engineering Colloquium</a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-286_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>NJIT's department of mechanical and industrial engineering will begin its 2013 fall colloquium series on Sept. 18 with &quot;Centrifugal Processing of Soft Material-based Systems,&quot; presented by Aaron Mazzeo, department of mechanical and aerospace engineering at Rutgers University.&nbsp; The seminar will take place at 1:00 p.m. in MEC 221.&nbsp;&nbsp;<a href="http://www.njit.edu/news/2013/2013-286.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 11, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-285.php" target="_blank">NJIT Staff Member Receives Advisor of the Year Award</a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-285_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>Thea Rachel Zunick, assistant director for Fraternity and Sorority Life, was recently awarded the Alpha Sigma Phi Fraternity Larry D. Philippi Award for the Fraternity &amp; Sorority Advisor of the year at Elevate, a bi-annual national convention.&nbsp; &nbsp;<a href="http://www.njit.edu/news/2013/2013-285.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 11, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-284.php" target="_blank">Productive Summer Vacations for SWE Engineers</a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-284_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>It&rsquo;s been a productive summer for grad and undergrad members of the NJIT Chapter of the Society of Women Engineers (SWE).&nbsp;&nbsp;<a href="http://www.njit.edu/news/2013/2013-284.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 11, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-283.php" target="_blank">US News Once Again Names NJIT Among Nation's Best National Universities</a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-283_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br><em>U.S. News &amp; World Report&rsquo;s Best Colleges 2014 Edition</em> has once again named NJIT to the top tier of national universities for its range of undergraduate majors and master's and doctoral degrees. This year, NJIT was ranked 150th out of the 200+ institutions earning the distinction of top national universities.&nbsp; NJIT also ranked 6th in the nation for ethnic diversity.&nbsp;<a href="http://www.njit.edu/news/2013/2013-283.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td width="100%" valign="top">
+                                 <span class="uportal-channel-text" style="float:right; font-size:10px; padding-left:10px;"> September 10, 2013</span>   
+                                 <span class="uportal-channel-text"><b><a href="http://www.njit.edu/news/2013/2013-282.php" target="_blank">NJIT President Bloom To Appear on One-on-One with Steve Adubato</a></b></span> 
+                                    <table cellspacing="1" cellpadding="0" border="0" align="left">
+                                        <tr>
+                                            <td> <img width="100" src="http://www.njit.edu/news/2013/images/2013-282_teaser.jpg" class="imgmargintop" border="0" align="left" style="border:1px solid black;"></td><td><img width="10" src="/uicomponents/images/1x1.gif" height="1"></td>
+                                        </tr>
+                                    </table>
+
+                                    
+			<span class="uportal-channel-text">
+                                        <newsContent>
+                                            <br>Watch NJIT President Joel S. Bloom today on <em>One-on-One with Steve Adubato</em> for a closer look at Newark&rsquo;s revitalization efforts and NJIT&rsquo;s new residence facilities.&nbsp; &nbsp;<a href="http://www.njit.edu/news/2013/2013-282.php" target="_blank"><img src="http://www.njit.edu/features/uicomponents/images/next.gif" border="0"></a>
+                                            <BR>
+</newsContent>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                    <br>
+                                </td>
+                            </tr>
+                             
+                            
+ <!--                                                            -->
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </body>
+</news3col>
+</html>
+

@@ -1,0 +1,685 @@
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+
+    
+   <base href='http://ist.njit.edu/'/>
+<!-- /support/afs/openAFS.php-->
+
+ 
+              
+<!-- Library Template 07/26/11 -->
+ 
+<link rel="stylesheet" type="text/css" href="http://www.njit.edu/corporate/uicomponents/styles/njit.css" /> 
+<link rel="stylesheet" type="text/css" href="http://www.njit.edu/corporate/uicomponents/styles/print.css" media="print" /> 
+
+<!--[if lt IE 9]><script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/scripts/html5shim-1.6.2.min.js"></script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="http://www.njit.edu/corporate/uicomponents/styles/ie/ie7.css" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="http://www.njit.edu/corporate/uicomponents/styles/ie/ie6.css" /><![endif]-->
+<script type="text/javascript" src="http://use.typekit.com/khd0xmd.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+<link href='http://ist.njit.edu/uicomponents/css/styles.css' rel='stylesheet' type='text/css' />
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+onloadfunctions = function() {
+	
+	
+	
+}
+
+window.onload = onloadfunctions;
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta name="robots" content="all" /> <!-- tell visiting robots it's OK to index this page --> 
+<meta name="MSSmartTagsPreventParsing" content="true" /> <!-- disallow MS SmartTags --> 
+<meta name="description" content="" /> 
+<meta name="keywords" content="" /> 
+<title>NJIT: Information Services and Technology: </title>
+
+
+</head>
+<body class="office office-homepage subpage wrap">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5898122-16']);
+_gaq.push(['_setDomainName', '.njit.edu']);
+_gaq.push(['_setAllowHash', false]); 
+_gaq.push(['_trackPageview']);
+</script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" rel="stylesheet" />
+
+<div id="accessibility">
+	<a href="#content" class="skiplink">Skip to main content area</a> 
+</div>
+<header class="container" id="header">
+	<h1><a href="http://www.njit.edu"><img src="http://www.njit.edu/corporate/uicomponents/images/logo.png" alt="New Jersey Institute of Technology" width="300" height="100" id="njitlogo"/><img src="http://www.njit.edu/corporate/uicomponents/images/logoprint.png" alt="New Jersey Institute of Technology" width="300" height="100" id="printlogo"/></a></h1>
+    
+
+    <form action="http://www.njit.edu/corporate/uicomponents/search/interceptor.php" id="search" name="search" method="post">
+		<label for="search_query">Search NJIT.edu</label>
+		<input id="search_query" name="query" type="text" placeholder="Search IST"/>
+		<input name="searchtype" type="hidden" value="website" id="website_search" />
+        <input name="collection_override" type="hidden" value="ist" id="collection" />
+		<input type="submit" value="Go" id="search_submit"/>
+	</form>
+
+
+<nav id="metanav">
+
+		<ul>
+
+			<li><a href="#popularlinks" id="popular_link">Popular Links</a>
+
+				<div id="popularlinks"> 
+
+					<div class="container"> 
+
+						<div class="column"> 
+
+						    <h5>Visit NJIT</h5> 
+
+						    <ul>  
+							    <li><a href="http://www.njit.edu/about/visit/gettingtonjit.php">Directions &amp; Maps</a></li> 
+								<li><a href="http://www.njit.edu/admissions/visit/campus-tours.php">Campus Tour</a></li> 
+								<li><a href="http://www.njit.edu/admissions/openhouse/">Open House</a></li> 
+								<li><a href="http://www.njit.edu/admissions/apply-online.php">Apply</a></li> 
+						    </ul> 
+
+						</div> 
+
+						<div class="column"> 
+
+						<h5>Tech &amp; IT Services</h5> 
+
+							<ul> 
+								<li><a href="http://my.njit.edu">MyNJIT</a></li> 
+							    <li><a href="http://webmail.njit.edu">Webmail</a></li> 
+								<li><a href="http://moodle.njit.edu">Moodle</a></li> 
+							    <li><a href="http://help.njit.edu">HelpDesk</a></li> 							  
+						    </ul> 
+
+						</div> 
+
+						<div class="column"> 
+
+						<h5>Trending Topics</h5> 
+
+						    <ul> 
+							    <li><a href="http://courseschedules.njit.edu/index.aspx?semester=2012w">Winter Course Schedule</a></li>
+                                <li><a href="http://courseschedules.njit.edu/index.aspx?semester=2013s">Spring Course Schedule</a></li>
+							    <li><a href="http://www.njit.edu/registrar/graduation/index.php">Graduation Information</a></li>
+							    <li><a href="http://www.njit.edu/financialaid/deadlines.php">Financial Aid Deadlines</a></li> 
+						    </ul> 
+
+						</div> 
+
+						<div class="column"> 
+
+						<h5>Key Offices</h5> 
+
+							<ul> 
+								<li><a href="http://www.njit.edu/registrar/">Registrar</a></li> 
+							    <li><a href="http://www.njit.edu/financialaid/">Financial Aid</a></li> 
+							    <li><a href="http://www.njit.edu/humanresources/">Human Resources</a></li>
+   							    <li><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/StoreCatalogDisplay?storeId=10555&langId=-1&catalogId=10001">Bookstore</a></li>							
+						    </ul> 
+
+						</div> 
+
+						<div class="column"> 
+
+						<h5>Website</h5> 
+
+							<ul> 
+								<li><a href="http://www.njit.edu/stratcomm/services/website/">Our New Website</a></li> 
+                                <li><a href="http://www.njit.edu/news/gotnews.php">Got News?</a></li> 
+                                <li><a href="http://www.njit.edu/stratcomm/services/website/brokenlink.php">Report a Broken Link</a></li>
+							</ul> 
+
+						</div> 
+
+					</div> 
+
+				</div>
+
+			</li>
+
+			<li><a href="http://www.njit.edu/calendar/">Calendar</a></li>
+			<li><a href="http://directory.njit.edu">Directory</a></li>
+			<li><a href="http://www.njit.edu/atoz/">Offices &amp; Services</a></li>
+			<li><a href="http://www.njit.edu/welcomecenter/">Visit NJIT</a></li>
+		</ul>
+
+	</nav>
+
+	<div id="audiences">
+		Information for:
+		<ul>
+			<li><a href="http://www.njit.edu/currentstudents/">Current Students</a></li>
+			<li><a href="http://www.njit.edu/facultystaff/">Faculty &amp; Staff</a></li>
+			<li><a href="http://www.njit.edu/doss/parents/">Parents</a></li>
+			<li><a href="http://www.njit.edu/alumni/">Alumni</a></li>
+		</ul>
+    </div>
+	<nav id="navbar">
+		<ul>
+			<li id="nav-homepage"><a href="http://www.njit.edu/">Home</a></li>
+			<li id="nav-about"><a href="http://www.njit.edu/about/">About</a></li>
+			<li id="nav-admissions"><a href="http://www.njit.edu/admissions/">Admissions</a></li>
+			<li id="nav-academics"><a href="http://www.njit.edu/academics/">Academics</a></li>
+			<li id="nav-research"><a href="http://www.njit.edu/research/">Research</a></li>
+			<li id="nav-campuslife"><a href="http://www.njit.edu/campuslife/">Campus Life</a></li>
+			<li id="nav-athletics"><a href="http://www.njit.edu/athletics/">Athletics</a></li>
+			<li id="nav-continuing"><a href="http://www.njit.edu/continuing/">Continuing Ed</a></li>
+			<li id="nav-beyond"><a href="http://www.njit.edu/cds/">Career Center</a></li> 
+			<li id="nav-news"><a href="http://www.njit.edu/news/">News</a></li> 
+			<li id="nav-giving"><a href="http://www.njit.edu/giving/">Giving</a></li> 
+		</ul>
+	</nav>
+</header>
+
+<header id="sectionheader">
+	<div id="titlebar">
+	<h1><a href=""><img src='http://ist.njit.edu//uicomponents/images/badge.png' alt='Department Logo' id='badge' />
+Information Services and Technology</a></h1>
+
+
+	
+				
+				<div id="topthree">
+					<a href="#" id="topthree_header">Our <strong>Top Three Most Requested Services</strong></a><ul>
+    <li><a href="support/helpdesk.php">IST HelpDesk</a></li>
+    <li><a href="software/">Software</a></li>
+    <li><a href="accounts/">NJIT Accounts</a></li>
+</ul>
+</div>				
+
+    </div>
+</header>
+
+<div id="wrapper">
+<div id="content" class="container">
+	<div id="left">
+	
+	
+
+	
+		
+	
+	
+		<nav id="subnavigation">
+				
+				<ul>
+    <li>
+<a href="about/index.php">About IST</a>
+        <ul>
+            <li><a href="about/mission.php">Mission</a></li>
+            <li><a href="about/departments.php">Departments</a></li>
+            <li><a href="about/orgchart.pdf">Organizational Chart (.pdf)</a></li>
+            <li><a href="about/contacts.php">Key Contacts</a></li>
+            <li><a href="about/policies.php">Policies</a></li>
+        </ul>
+    </li>
+    <li>
+<a href="services/index.php">Services</a>
+        <ul>
+            <li>
+<a href="accounts/index.php">Accounts</a>
+                <ul>
+                    <li><a href="accounts/ucid.php">UCID</a></li>
+                    <li>
+<a href="accounts/afs.php">AFS</a>
+                        <ul>
+                            <li><a href="http://ist.njit.edu/support/afs/storage.php">Storage Space</a></li>
+                            <li><a href="http://ist.njit.edu/webhosting/index.php">Web Pages</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/backups.php">Backups</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/auth.php">Authentication</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/permissions.php">Permissions</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/afslocal.php">Synchronization</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/sharing.php">File Sharing</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/quota.php">Quota and Usage</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/afspassword.php">Password</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/docs.php">Documentation</a></li>
+                            <li><a href="http://ist.njit.edu/support/afs/openAFS.php">OpenAFS Client</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accounts/windows.php">Windows</a></li>
+                    <li><a href="/accounts/banner.php">Banner</a></li>
+                    <li><a href="accounts/tempaccounts.php">Temporary Accounts</a></li>
+                    <li><a href="support/password">Password</a></li>
+                </ul>
+            </li>
+            <li>
+<a href="email/index.php">Email</a>
+                <ul>
+                    <li><a href="email/webmail.php">Faculty / Staff / Students / Alumni</a></li>
+                    <li><span style="color:Red"><strong><a href="/ist/gogoogle/index.php">Migration to Webmail by Google</a></strong></span></li>
+                </ul>
+            </li>
+            <li>
+<a href="connectivity/index.php">Network</a>
+                <ul>
+                    <li><a href="vpn/index.php">VPN</a></li>
+                </ul>
+            </li>
+            <li><a href="telephone/index.php">Telephone</a></li>
+            <li><a href="security/index.php">Staying Safe and Secure</a></li>
+            <li>
+<a href="software/index.php">Software</a>
+                <ul>
+                    <li><a href="software/download.php">Download</a></li>
+                    <li><a href="software/az.php">Complete List</a></li>
+                    <li><a href="software/platform.php">By Platform</a></li>
+                    <li><a href="software/role.php">By Role</a></li>
+                    <li><a href="computinglabs/software.php">By Lab</a></li>
+                    <li><a href="software/Bigdata.php">Big Data Analytics</a></li>
+                    <li><a href="software/free_software.php">Free Software</a></li>
+                    <li><a href="software/open_source_software.php">Open Source Software</a></li>
+                    <li><a href="http://library.njit.edu/software">Van Houten Library</a></li>
+                    <li><a href="https://ist.njit.edu/software/swrequestmain.php">Request Software</a></li>
+                </ul>
+            </li>
+            <li>
+<a href="pipeline/index.php">Highlander Pipeline</a>
+                <ul>
+                    <li><a href="http://my.njit.edu">Log in</a></li>
+                </ul>
+            </li>
+            <li>
+<a href="webhosting/index.php">Webpages and Social Networking</a>
+                <ul>
+                    <li><a href="webhosting/createwebpage.pdf">Setting Up Your Homepage</a></li>
+                    <li><a href="clubs/index.php">Student Organizations</a></li>
+                    <li><a href="google/index.php">Google Apps for Education</a></li>
+                    <li><a href="http://facebook.njit.edu">NJIT on Facebook</a></li>
+                </ul>
+            </li>
+            <li>
+<a href="teaching/index.php">Teaching and Learning</a>
+                <ul>
+                    <li><a href="http://www.njit.edu/tlt/">TLT Training</a></li>
+                    <li><a href="training">ACS Training</a></li>
+                    <li><a href="teaching/management.php">Management Tools</a></li>
+                    <li><a href="teaching/support.php">Classroom Support</a></li>
+                    <li><a href="https://media.njit.edu/">Instructional Design</a></li>
+                    <li><a href="facultypc/index.php">Faculty PCs</a></li>
+                    <li><a href="support/devices/ipad/index.php">iPad</a></li>
+                </ul>
+            </li>
+            <li><a href="computinglabs/index.php">Computing Sites</a></li>
+            <li>
+<a href="services/servers.php">Servers</a>
+                <ul>
+                    <li><a href="support/db/mysql.php">MySQL</a></li>
+                    <li><a href="support/db/oracle.php">Oracle</a></li>
+                    <li><a href="support/tomcat.php">Tomcat</a></li>
+                    <li><a href="http://ist.njit.edu/support/db/cgiserver.php">CGI</a></li>
+                    <li><a href="http://ist.njit.edu/support/db/listserver.php">Mailman Listserver</a></li>
+                    <li><a href="http://ist.njit.edu/support/db/webservers.php">Web Servers</a></li>
+                    <li><a href="http://ist.njit.edu/support/db/webmathematica.php">webMathematica</a></li>
+                </ul>
+            </li>
+            <li>
+<a href="/ist/services/deptspecific.php">Department Specific Services</a>
+                <ul>
+                    <li><a href="services/ccs.php">CCS</a></li>
+                    <li><a href="services/dmslatency.php">DMS</a></li>
+                </ul>
+            </li>
+            <li>
+<a href="services/additional.php">Additional Services</a>
+                <ul>
+                    <li>
+<a href="compreq">Student Computers</a>
+                        <ul>
+                            <li><a href="compreq/current_fall">Requirement</a></li>
+                            <li><a href="compreq/current_fall/comparison.php">Compare Models</a></li>
+                            <li><a href="compreq/current_fall/spec.php">Recommended Minimum Specs</a></li>
+                            <li><a href="compreq/faq.php">General FAQ</a></li>
+                            <li><a href="compreq/faq_arch.php">Architecture FAQ</a></li>
+                            <li><a href="compreq/faq_art_design.php">Art + Design FAQ</a></li>
+                            <li><a href="compreq/current_fall/software.php">Software Bundle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="clubs">Student Organizations</a></li>
+                    <li><a href="newsserver">News Server</a></li>
+                    <li><a href="support/printing">Printing to a Canon Copier</a></li>
+                    <li><a href="support/home_connection">Remote Desktop Connection</a></li>
+                    <li><a href="services/institutionalpc.php">Institutional Computers</a></li>
+                    <li><a href="music/music.php">Legal Online Music and Media</a></li>
+                    <li><a href="techfresh/index.php">Project TechFresh</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+<a href="support/index.php">Help and Support</a>
+        <ul>
+            <li><a href="support/kbase.php">FAQ Knowledge Base</a></li>
+            <li>
+<a href="support/helpdesk.php">IST Helpdesk</a>
+                <ul>
+                    <li><a href="support/contactus.php">HelpDesk Service Request</a></li>
+                    <li><a href="support/stats.php">Help Call Statistics</a></li>
+                </ul>
+            </li>
+            <li><a href="cmf/index.php">Repairs &amp; Maintenance</a></li>
+            <li><a href="http://www.njit.edu/tlt">Teaching, Learning, and Technology</a></li>
+            <li><a href="software/documents.php">Documentation</a></li>
+            <li><a href="support/njitsos.php">NJIT SOS</a></li>
+        </ul>
+    </li>
+    <li>
+<a href="quickstart/index.php">Quick Start</a>
+        <ul>
+            <li><a href="quickstart/newstudent.php">Students</a></li>
+            <li><a href="quickstart/newemployee.php">Faculty and Staff</a></li>
+            <li><a href="quickstart/newalumni.php">Alumni</a></li>
+        </ul>
+    </li>
+    <li>
+<a href="cyberinfrastructure/index.php">Cyberinfrastructure</a>
+        <ul>
+            <li><a href="worldgrid/index.php">World Community Grid</a></li>
+            <li><a href="cyberinfrastructure/sta.php">Cluster Software &amp; Tools</a></li>
+            <li><a href="cyberinfrastructure/hpc.php">High Performance Computing</a></li>
+        </ul>
+    </li>
+    <li>
+<a href="http://ist.njit.edu/news_archive.php?tag=filter">News</a>
+        <ul>
+            <li><a href="http://ist.njit.edu/news_archive.php?tag=filter&amp;show=1&amp;year=2010">2010 Archive</a></li>
+            <li><a href="http://ist.njit.edu/news_archive.php?tag=filter&amp;show=1&amp;year=2009">2009 Archive</a></li>
+            <li><a href="http://ist.njit.edu/news_archive.php?tag=filter&amp;show=1&amp;year=2008">2008 Archive</a></li>
+            <li><a href="http://ist.njit.edu/news_archive.php?tag=filter&amp;show=1&amp;year=2007">2007 Archive</a></li>
+        </ul>
+    </li>
+    <li>
+<a href="maintenance/">System Maintenance</a>
+        <ul>
+            <li><a href="http://www.njit.edu/bulletin/sm.html">Announcements</a></li>
+            <li><a href="maintenance/schedule.php">Schedule</a></li>
+            <li><a href="support/njitsos.php">NJIT SOS</a></li>
+        </ul>
+    </li>
+</ul>
+				
+		</nav>
+				<aside class="misc">
+					
+				</aside>
+			
+			
+	</div>	
+			
+					
+	<section id="main">
+	
+	<header>
+				<h1>OpenAFS Client Installation</h1> 
+				<div class="breadcrumb"><a href="/">Home</a> &#187; <a href="">Information Services and Technology</a></div>
+			</header>
+		
+		
+		  
+		  
+		  <aside id="header_callout">
+		  
+		  					
+			<!-- START call out if any -->	
+			<div class="important">
+				<h2>Related Links</h2>
+				<p>
+				<p><a href="http://ist.njit.edu/ist/accounts/accessafs.php">Accessing AFS</a></p>
+<p><a href="http://ist.njit.edu/software/platform.php">AFS Software</a></p>
+<p><a href="http://ist.njit.edu/support/afs/afspassword.php">AFS Password Information</a></p>
+<p><a href="http://ist.njit.edu/webhosting/afs.php">Personal Web Pages on AFS</a></p>
+<p><a href="http://ist.njit.edu/support/afs/quota.php">Check Remaining AFS Space</a></p>
+<p><a href="http://ist.njit.edu/support/afs/afsadvanced.php">Advanced AFS Information</a></p>
+<p><a href="http://ist.njit.edu/ist/support/afs/afsserverstatus.php">AFS Server Status</a></p>
+<a href="http://ist.njit.edu/support/afs/index.php">AFS FAQ's</a>
+
+				</p>	
+			</div>
+			<!-- END call out-->
+			
+			
+				<!-- START Misc Code XHTML -->
+			
+				
+			
+			<!-- END Misc Code XHTML -->
+			
+		  
+		  	
+			
+			
+            
+           
+			
+		
+			
+		
+			
+			
+			 
+			 </aside>
+			
+		
+			
+			
+		
+			<div id="body">
+				<div id="pagetext">
+				OpenAFS is an application that allows users to access their AFS drive as a local drive on their computer. It replaces the need to use telnet or ssh to transfer files from your hard drive to you AFS space. For more information about your AFS account and its uses and benefits, please click <a href="/ist/accounts/afs.php">here</a>. <br />
+<h4>Windows:</h4>
+<ul>
+    <li>Download OpenAFS 1.5.7300 <a href="http://ist.njit.edu/software/display.php?id=414">32-bit client</a> or <a href="http://ist.njit.edu/software/display.php?id=415">64-bit client</a> or view <a href="http://ist.njit.edu/software/documentation/afs/1.5.7300/">installation instructions</a></li>
+    <li>To download OpenAFS 32-bit tools for 64-bit client 1.5.7300, click <a href="http://ist.njit.edu/software/display.php?id=416">here</a>.</li>
+</ul>
+<h4>Mac:</h4>
+<ul>
+    <li>Download <a href="http://ist.njit.edu/software/display.php?id=487">OpenAFS 1.5.7700</a> or view <a href="http://ist.njit.edu/software/documentation/afs/1.5.7700-mac/">installation instructions</a></li>
+</ul>
+<h4>Linux (Ubuntu):</h4>
+<ul>
+    <li><a href="http://ist.njit.edu/accounts/ubuntuAFS.php">Installation instructions</a><br /></li>
+</ul>
+<p>For the latest version of the OpenAFS client, please check <a href="http://ist.njit.edu/software/download.php">http://ist.njit.edu/software/download.php</a> or <a href="http://www.openafs.org">http://www.openafs.org</a> .</p>
+<p><a href="/ist/support/afs/openafsfaq.php">OpenAFS FAQs</a></p>
+
+				</div>
+			</div>
+		
+			<div class="misc">
+				
+			</div>
+			
+			
+						
+			<div class="sct_hidden" id="Code">
+				
+					
+								
+			</div>
+		
+	</section>			
+					
+		</div>
+		</div>
+<footer id="footer">
+	<div class="container">
+		<div id="address"><a href="http://www.njit.edu">New Jersey Institute of Technology</a><br/>
+			<span>University Heights</span> <span>Newark, New Jersey 07102</span>
+		</div>
+		<ul id="footer_links">
+			<li><a href="http://www.njit.edu/about/key-contacts.php">Contact Us</a></li>
+			<!--<li><a href="#">Link in the footer</a></li>-->
+			<li><a href="http://www.njit.edu/about/visit/gettingtonjit.php">Maps &amp; Directions</a></li>
+			<!--<li><a href="#">Footer link</a></li>-->
+		</ul>
+		<ul id="footer_social">
+			<li><a href="http://www.facebook.com/pages/Newark-NJ/NJIT/7185471825" title="NJIT on Facebook"><img src="http://www.njit.edu/corporate/uicomponents/images/social/facebook.gif" width="16" height="16" alt="Facebook"/></a></li>
+			<li><a href="http://twitter.com/njit" title="NJIT on Twitter"><img src="http://www.njit.edu/corporate/uicomponents/images/social/twitter.gif" width="16" height="16" alt="Twitter"/></a></li>
+			<li><a href="http://youtube.com/njit" title="NJIT on YouTube"><img src="http://www.njit.edu/corporate/uicomponents/images/social/youtube.gif" width="16" height="16" alt="YouTube"/></a></li>
+			<li><a href="http://www.flickr.com/photos/njit" title="NJIT on Flickr"><img src="http://www.njit.edu/corporate/uicomponents/images/social/flickr.gif" width="16" height="16" alt="Flickr"/></a></li>
+		</ul>
+	</div>
+</footer>
+
+<script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/scripts/jquery.bgpos.js"></script>
+<script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/scripts/quickaccess.js"></script> 
+<!--<script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/jwplayer.js"></script> -->
+<script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/scripts/njit.js"></script>
+
+<!-- Start QuickAccess Links -->
+<div style="display:none;" id="quickaccess">
+	
+    <ul class="quicklinks">
+		<li><a href="http://www.njit.edu/about/key-contacts.php#address">Address<!--njit address, mailing address--></a></li>
+	    <li><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/StoreCatalogDisplay?storeId=10555&amp;langId=-1&amp;catalogId=10001">Bookstore</a><!--textbooks--></li>
+		<li><a href="http://www.njit.edu/about/visit/gettingtonjit.php">Directions<!--driving directions, getting to campus--></a></li>
+		<li><a href="http://www.njit.edu/about/visit/njit-maps.php">Maps<!--njit maps, campus maps, location--></a></li>
+		<li><a href="http://www.njit.edu/openhouse/">Open House<!--openhouse--></a></li>
+	    <li><a href="http://njitday.njit.edu">NJIT Day<!--njit day, homecoming, carnival, parent's weekend--></a></li>
+	    <li><a href="http://www.njit.edu/athletics/">Athletics<!--division 1, div1, div one, highlanders, sports, recreation, Naimoli--></a></li>
+   	    <li><a href="http://www.njit.edu/hackathon/">Hackathon 2011<!--elsevier, acm, sciverse--></a></li>
+   	    <li><a href="http://www.njit.edu/financialaid/howtoapply.php">FAFSA<!--financial aid, Free Application for Federal Student Aid--></a></li>
+    </ul>
+
+    <ul class="academics">
+	    <li><a href="http://www.njit.edu/academics/">Academics<!--majors, minors, academic programs, programs--></a></li>
+	    <li><a href="http://math.njit.edu/academics/undergraduate/index.php">Applied Math<!--mathematics, mathematical sciences--></a></li>
+		<li><a href="http://physics.njit.edu/academics/undergraduate/bs-appliedphysics.php">Applied Physics<!--physics, astronomy--></a></li>
+		<li><a href="http://math.njit.edu/academics/undergraduate/index.php">Applied Statistics<!--mathematics, mathematical sciences, statistics--></a></li>
+		<li><a href="http://architecture.njit.edu/academics/undergraduate/architecture/b-arch.php">Architecture</a></li>
+		<li><a href="http://cs.njit.edu/academics/undergraduate/bsbnfo.php">Bioinformatics</a><!--bioinfomatics--></li>
+   		<li><a href="http://biology.njit.edu/academics/undergraduate/bs-biology.php">Biology</a></li>
+        <li><a href="http://biomedical.njit.edu/academics/undergraduate/index.php">Biomedical Engineering</a></li>        
+    </ul>
+
+    <ul class="offices">
+	    <li><a href="http://www.njit.edu/admissions/">Admissions<!--apply, inquire, application, online application, visit, tour--></a></li>
+	    <li><a href="http://www.njit.edu/alumni/">Alumni Relations<!--boynton--></a></li>
+	    <li><a href="http://www.njit.edu/bursar/">Bursar<!--bursar,pay a bill,payment, business office--></a></li>
+	    <li><a href="http://help.njit.edu">Computing HelpDesk<!--password, forgot my password, reset my password, re-set my password, re set my password,IT, IST, helpdesk, help desk--></a></li>
+	    <li><a href="http://www.njit.edu/cds/">Career Development Services<!--jobs, internship, coop, co-op--></a></li>
+	    <li><a href="http://www.njit.edu/financialaid/">Financial Aid Services<!--finaid, fin aid, loans, scholarships, aid, cost--></a></li>
+	    <li><a href="http://www.njit.edu/humanresources/">Human Resources<!--jobs, employement, hr--></a></li>
+	    <li><a href="http://www.njit.edu/registrar/">Registrar<!--register, enroll--></a></li>
+	    <li><a href="http://www.njit.edu/reslife/">Residence Life<!--living on campus, dorms, oak, redwood, cypress, university center, university centre, dormatory, dormatories, laurel, housing, where to live, reslife--></a></li>
+   	    <li><a href="http://www.njit.edu/president/">Office of the President<!--robert altenkirch, bob altenkirch, chancellor--></a></li>
+	    <li><a href="http://www.njit.edu/provost/">Office of the Provost<!--ian gately, judith redling, judy redling--></a></li>
+    </ul>
+
+    <ul class="services">
+	    <li><a href="http://my.njit.edu">MyNJIT<!--highlander pipeline, pipeline, campus pipeline, portal--></a></li>
+	    <li><a href="http://www.njit.edu/registrar/calendars/">Academic calendars<!--calendar, schedule--></a></li>
+		<li><a href="http://www.njit.edu/registrar/schedules/">Course schedules</a></li>
+	    <li><a href="http://www.njit.edu/parking/">Parking<!--guest parking, event parking, where to park--></a></li>
+	    <li><a href="http://www.njit.edu/registrar/transcript/">Transcript requests</a></li>
+    </ul>
+
+</div>    
+<!-- end QuickAccess links -->
+<script>
+jQuery(document).ready(function() {
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+});
+</script></body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

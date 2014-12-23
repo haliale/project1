@@ -1,0 +1,584 @@
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+
+    
+   <base href='http://moodle.njit.edu/'/>
+<!-- /index.php-->
+
+ 
+              
+
+<!-- Admin Template 04/04/11 -->
+ 
+<link rel="stylesheet" type="text/css" href="http://www.njit.edu/corporate/uicomponents/styles/njit.css" /> 
+<link rel="stylesheet" type="text/css" href="http://www.njit.edu/corporate/uicomponents/styles/print.css" media="print" /> 
+
+<!--[if lt IE 9]><script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/scripts/html5shim-1.6.2.min.js"></script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="http://www.njit.edu/corporate/uicomponents/styles/ie/ie7.css" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="http://www.njit.edu/corporate/uicomponents/styles/ie/ie6.css" /><![endif]-->
+<script type="text/javascript" src="http://use.typekit.com/khd0xmd.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+
+
+
+
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script type="text/javascript">
+
+
+onloadfunctions = function() {
+	
+	 
+
+	
+}
+
+window.onload = onloadfunctions;
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta name="robots" content="all" /> <!-- tell visiting robots it's OK to index this page --> 
+<meta name="MSSmartTagsPreventParsing" content="true" /> <!-- disallow MS SmartTags --> 
+<meta name="description" content="Moodle Login" /> 
+<meta name="keywords" content="Moodle" /> 
+<title>NJIT: Moodle: Moodle Login</title>
+
+
+</head>
+<body class="office office-homepage subpage wrap">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5898122-16']);
+_gaq.push(['_setDomainName', '.njit.edu']);
+_gaq.push(['_setAllowHash', false]); 
+_gaq.push(['_trackPageview']);
+</script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" rel="stylesheet" />
+
+<div id="accessibility">
+	<a href="#content" class="skiplink">Skip to main content area</a> 
+</div>
+<header class="container" id="header">
+	<h1><a href="http://www.njit.edu"><img src="http://www.njit.edu/corporate/uicomponents/images/logo.png" alt="New Jersey Institute of Technology" width="300" height="100" id="njitlogo"/><img src="http://www.njit.edu/corporate/uicomponents/images/logoprint.png" alt="New Jersey Institute of Technology" width="300" height="100" id="printlogo"/></a></h1>
+    
+
+    <form action="http://www.njit.edu/corporate/uicomponents/search/interceptor.php" id="search" name="search" method="post">
+		<label for="search_query">Search NJIT.edu</label>
+		<input id="search_query" name="query" type="text" placeholder="Search"/>
+		<input name="searchtype" type="hidden" value="website" id="website_search" />
+        <input name="collection_override" type="hidden" value="default_collection" id="collection" />
+		<input type="submit" value="Go" id="search_submit"/>
+	</form>
+
+
+<nav id="metanav">
+
+		<ul>
+
+			<li><a href="#popularlinks" id="popular_link">Popular Links</a>
+
+				<div id="popularlinks"> 
+
+					<div class="container"> 
+
+						<div class="column"> 
+
+						    <h5>Visit NJIT</h5> 
+
+						    <ul>  
+							    <li><a href="http://www.njit.edu/about/visit/gettingtonjit.php">Directions &amp; Maps</a></li> 
+								<li><a href="http://www.njit.edu/admissions/visit/campus-tours.php">Campus Tour</a></li> 
+								<li><a href="http://www.njit.edu/admissions/openhouse/">Open House</a></li> 
+								<li><a href="http://www.njit.edu/admissions/apply-online.php">Apply</a></li> 
+						    </ul> 
+
+						</div> 
+
+						<div class="column"> 
+
+						<h5>Tech &amp; IT Services</h5> 
+
+							<ul> 
+								<li><a href="http://my.njit.edu">MyNJIT</a></li> 
+							    <li><a href="http://webmail.njit.edu">Webmail</a></li> 
+								<li><a href="http://moodle.njit.edu">Moodle</a></li> 
+							    <li><a href="http://help.njit.edu">HelpDesk</a></li> 							  
+						    </ul> 
+
+						</div> 
+
+						<div class="column"> 
+
+						<h5>Trending Topics</h5> 
+
+						    <ul> 
+							    <li><a href="http://courseschedules.njit.edu/index.aspx?semester=2012w">Winter Course Schedule</a></li>
+                                <li><a href="http://courseschedules.njit.edu/index.aspx?semester=2013s">Spring Course Schedule</a></li>
+							    <li><a href="http://www.njit.edu/registrar/graduation/index.php">Graduation Information</a></li>
+							    <li><a href="http://www.njit.edu/financialaid/deadlines.php">Financial Aid Deadlines</a></li> 
+						    </ul> 
+
+						</div> 
+
+						<div class="column"> 
+
+						<h5>Key Offices</h5> 
+
+							<ul> 
+								<li><a href="http://www.njit.edu/registrar/">Registrar</a></li> 
+							    <li><a href="http://www.njit.edu/financialaid/">Financial Aid</a></li> 
+							    <li><a href="http://www.njit.edu/humanresources/">Human Resources</a></li>
+   							    <li><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/StoreCatalogDisplay?storeId=10555&langId=-1&catalogId=10001">Bookstore</a></li>							
+						    </ul> 
+
+						</div> 
+
+						<div class="column"> 
+
+						<h5>Website</h5> 
+
+							<ul> 
+								<li><a href="http://www.njit.edu/stratcomm/services/website/">Our New Website</a></li> 
+                                <li><a href="http://www.njit.edu/news/gotnews.php">Got News?</a></li> 
+                                <li><a href="http://www.njit.edu/stratcomm/services/website/brokenlink.php">Report a Broken Link</a></li>
+							</ul> 
+
+						</div> 
+
+					</div> 
+
+				</div>
+
+			</li>
+
+			<li><a href="http://www.njit.edu/calendar/">Calendar</a></li>
+			<li><a href="http://directory.njit.edu">Directory</a></li>
+			<li><a href="http://www.njit.edu/atoz/">Offices &amp; Services</a></li>
+			<li><a href="http://www.njit.edu/welcomecenter/">Visit NJIT</a></li>
+		</ul>
+
+	</nav>
+
+	<div id="audiences">
+		Information for:
+		<ul>
+			<li><a href="http://www.njit.edu/currentstudents/">Current Students</a></li>
+			<li><a href="http://www.njit.edu/facultystaff/">Faculty &amp; Staff</a></li>
+			<li><a href="http://www.njit.edu/doss/parents/">Parents</a></li>
+			<li><a href="http://www.njit.edu/alumni/">Alumni</a></li>
+		</ul>
+    </div>
+	<nav id="navbar">
+		<ul>
+			<li id="nav-homepage"><a href="http://www.njit.edu/">Home</a></li>
+			<li id="nav-about"><a href="http://www.njit.edu/about/">About</a></li>
+			<li id="nav-admissions"><a href="http://www.njit.edu/admissions/">Admissions</a></li>
+			<li id="nav-academics"><a href="http://www.njit.edu/academics/">Academics</a></li>
+			<li id="nav-research"><a href="http://www.njit.edu/research/">Research</a></li>
+			<li id="nav-campuslife"><a href="http://www.njit.edu/campuslife/">Campus Life</a></li>
+			<li id="nav-athletics"><a href="http://www.njit.edu/athletics/">Athletics</a></li>
+			<li id="nav-continuing"><a href="http://www.njit.edu/continuing/">Continuing Ed</a></li>
+			<li id="nav-beyond"><a href="http://www.njit.edu/cds/">Career Center</a></li> 
+			<li id="nav-news"><a href="http://www.njit.edu/news/">News</a></li> 
+			<li id="nav-giving"><a href="http://www.njit.edu/giving/">Giving</a></li> 
+		</ul>
+	</nav>
+</header>
+
+<header id="sectionheader">
+	<div id="titlebar">
+	<h1><a href="">
+Moodle</a></h1>
+
+
+	
+								
+
+    </div>
+    
+</header>
+
+<div id="wrapper">
+
+<div id="content" class="container">
+	<div id="left">
+	
+	
+
+	
+		
+	
+	
+		<nav id="subnavigation">
+				
+								
+		</nav>
+				<aside class="misc">
+					
+				</aside>
+			
+			
+	</div>	
+	
+    		
+					
+	<section id="main">
+		
+			
+		  
+		  
+		  <aside id="header_callout">
+		  
+		  	
+			
+				<!-- START Misc Code XHTML -->
+			
+				
+			
+			<!-- END Misc Code XHTML -->
+			
+		  
+		  	
+			
+			
+            
+           
+			
+		 
+			
+		
+			
+			
+			<!-- START MINI GREEN if any -->
+			 <aside class="minigreen">
+				<h3>Log into Moodle</h3>
+				<div class="minigreen_body"><div style="display:block;" class="loginbox" id="div_njit">
+    <form name="loginForm" action="https://moodleauth00.njit.edu/cpip_serv/login.aspx?esname=moodle" method="post" id="loginForm">
+        <div><input name="__VIEWSTATE" type="hidden" value="/wEPDwUJNDIzOTY1MjU5ZGQdLVY+81xpmN0ATE7y41EHAhVaCA==" id="__VIEWSTATE" /></div>
+        <table style="margin-top:5px;margin-bottom:5px;border-spacing:0px;" id="tablenoBorder">
+            <tr>
+                <td width="100px" style="text-align:left"><strong>UCID:</strong></td>
+            </tr>
+            <tr>
+                <td><input name="txtUCID" type="text" style="width:168px;" id="txtUCID" /></td>
+            </tr>
+            <tr>
+                <td width="100px" style="text-align:left"><strong>Password:</strong></td>
+            </tr>
+            <tr>
+                <td><input name="txtPasswd" type="password" style="width:168px;" id="txtPasswd" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><input name="btnLogin" type="submit" value="Login" id="btnLogin" /></td>
+            </tr>
+        </table>
+        <div><input name="__EVENTVALIDATION" type="hidden" value="/wEWBAK7zbGBDQLr9O+IBwK01ba+BAKC3IeGDOn1GTxupWw9xfJhOXrBSFX6INdC" id="__EVENTVALIDATION" /></div>
+    </form>
+</div>
+<a href="/moodle/non-credit.php" target="_blank">Login without an NJIT UCID</a><br /><br /><a href="http://online.njit.edu/moodle/" target="_blank">Continuing Professional Education</a>
+<div><input name="testcookies" type="hidden" value="1" /></div>
+</div>
+			</aside>
+			
+			<!-- END MINI GREEN -->
+			
+			
+			<!-- START EVER GREEN if any -->
+			<aside class="evergreen">
+				<h5>Moodle Twitter</h5>
+				<div class="evergreen_body"><div><a class="twitter-timeline" href="https://twitter.com/njit_moodle">Tweets by @njit_moodle</a> <script type="text/javascript" src="http://moodle.njit.edu/uicomponents/scripts/twitter.js"></script></div>
+</div>
+			</aside>
+			<!-- END EVER GREEN -->
+			 
+			 </aside>
+			
+		
+			
+			<header>
+				<h1></h1> 
+				<div class="breadcrumb"><a href="/">Home</a> &#187; <a href="">Moodle</a></div>
+			</header>
+			
+			
+		
+			<div id="body">
+				<div id="pagetext">
+				<p><strong>Note</strong>:<strong> All requests for Moodle assistance need to originate with the <a href="http://ist.njit.edu/support/helpdesk.php">NJIT Helpdesk</a></strong>.&nbsp; The Helpdesk will assign your call to the appropriate person who will get back to you as soon as possible.</p>
+<p>There are two ways to contact the HelpDesk:</p>
+<ol>
+    <li>Call 973-596-2900.&nbsp;Monday - Friday 8 am - 7 pm.</li>
+    <li>Log a HelpDesk Service Request online - <a href="https://ist.njit.edu/support/contactus.php">https://ist.njit.edu/support/contactus.php</a>.</li>
+</ol>
+<p></p>
+<table border="0" class="tablenoborder" cellspacing="2" cellpadding="1">
+    <tr>
+        <td width="100%" colspan="2">&nbsp;<img src="/moodle/images/moodle_logo_small.jpg" alt="" width="206" height="52" /></td>
+    </tr>
+    <tr>
+        <td colspan="2" width="100%">
+            <div class="questionbox_wrapperLrg" style="width: 100%">
+<img style="float:left;" alt="questionboximage" src="http://www.njit.edu/admissions/msimages/questionbox_img_leftLrg.gif" /> <img style="float:right;" alt="questionboximage" src="http://www.njit.edu/admissions/msimages/questionbox_img_rightLrg.gif" />
+                <div class="questionbox_bodyLrg">
+                    <div style="float:left; width:100%;">
+                        <form action="http://njit.intelliresponse.com/itms/index.jsp" name="intelli" id="intelli" method="post">
+                            <div id="questionForm">
+<img style="float:left; margin-top:5px;" alt="questionboximage" src="http://www.njit.edu/admissions/msimages/questionbox_img_hdr.gif" /> <input name="interfaceID" type="hidden" value="1" /><input name="id" type="hidden" value="-1" /><input name="requestType" type="hidden" /><input name="source" type="hidden" value="1" /><input name="NormalRequest" style="float:right;" type="image" value="Submit" src="http://www.njit.edu/admissions/msimages/questionbox_img_submit.gif" />
+                                <div style="margin-right:110px;margin-left:130px;"><input style="width: 350px" name="question" maxlength="250" type="text" class="qbox" value="Type your complete question here" onfocus="this.value=' ';" /></div>
+                            </div>
+                            <div class="question_info">
+                                <div style="clear:both; padding-top:3px;"><em>Ask using real questions like:</em> How do I contact the NJIT Computing Helpdesk? <a id="topten" href="http://njit.intelliresponse.com/itms/index.jsp?question=&amp;requestType=TopQuestionsRequest" style="margin-left: 20px">Top 10</a></div>
+<a href="javascript:topten();" id="topten1"><img name="TopQuestionsRequest" border="0" style="float:left;margin-left:10px;" alt="Top10" src="http://www.njit.edu/admissions/msimages/questionbox_img_topten.gif" /></a>                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td height="50%" valign="top" width="47%">
+            <h2>Student Support</h2>
+            <ul>
+                <li><strong><a href="http://njit2.mrooms.net/">Moodle 2 pilot</a></strong></li>
+                <li><strong><a href="/moodle/tutorials/students/index.php">Student Tutorials</a></strong></li>
+                <li><strong><a href="/moodle/webcam-relay.php">Webcam Issue - Camtasia</a></strong></li>
+                <li><strong><a href="/moodle/tutorials/students/faq.php">Frequently Asked Questions</a></strong></li>
+                <li><strong><a href="/moodle/rutgers_students.php">Help for Rutgers Students</a></strong></li>
+                <li><strong><a href="http://www.youtube.com/watch?v=kj46fr0hXsU" target="_blank">Tour an Online Course</a></strong></li>
+            </ul>
+        </td>
+        <td height="50%" valign="top" width="53%">
+            <h2>Faculty Support</h2>
+            <ul>
+                <li><span style="text-decoration:underline"><strong><a href="http://njit2.mrooms.net/">Moodle 2 pilot</a></strong></span></li>
+                <li><strong><a href="/moodle/tutorials/faculty/index.php">Faculty Tutorials</a></strong></li>
+                <li><strong><a href="/moodle/webcam-relay.php">Webcam Issue - Camtasia</a></strong></li>
+                <li><strong><a href="/moodle/tutorials/faculty/faq.php">Frequently Asked Questions</a></strong></li>
+                <li><strong><a href="/moodle/faculty_help.php">Getting Help</a></strong></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" colspan="2">
+            <h3><strong>eFolio</strong></h3>
+            <p>eFolio is an <strong>ePortfolio</strong> tool that has been integrated with Moodle.</p>
+            <ul>
+                <li><strong><a href="/moodle/tutorials/eFolio.pdf">eFolio Tutorial</a></strong></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<div style="margin-left: 2em">
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+
+				</div>
+			</div>
+		
+			<div class="misc">
+				<style type="text/css">
+
+.evergreen {background-color: white !important; border: 0 !important} 
+
+.evergreen h5 {display: none}
+
+#twtr-widget-1 {margin-left: -15px}
+
+.office #body .content_Box img
+{
+border:0px;	
+}
+</style>
+
+<script type="text/javascript">
+
+document.body.className="office office-homepage subpage fullwidth";
+$('.twitter-timeline').attr('data-widget-id', '378549915460177920');
+
+
+</script>
+<!-- lastRSS errors:
+--> 
+			</div>
+			
+			<div class="sct_hidden" id="Code">
+				
+					
+								
+			</div>
+		
+	</section>			
+					
+		</div>
+		</div>
+<footer id="footer">
+	<div class="container">
+		<div id="address"><a href="http://www.njit.edu">New Jersey Institute of Technology</a><br/>
+			<span>University Heights</span> <span>Newark, New Jersey 07102</span>
+		</div>
+		<ul id="footer_links">
+			<li><a href="http://www.njit.edu/about/key-contacts.php">Contact Us</a></li>
+			<!--<li><a href="#">Link in the footer</a></li>-->
+			<li><a href="http://www.njit.edu/about/visit/gettingtonjit.php">Maps &amp; Directions</a></li>
+			<!--<li><a href="#">Footer link</a></li>-->
+		</ul>
+		<ul id="footer_social">
+			<li><a href="http://www.facebook.com/pages/Newark-NJ/NJIT/7185471825" title="NJIT on Facebook"><img src="http://www.njit.edu/corporate/uicomponents/images/social/facebook.gif" width="16" height="16" alt="Facebook"/></a></li>
+			<li><a href="http://twitter.com/njit" title="NJIT on Twitter"><img src="http://www.njit.edu/corporate/uicomponents/images/social/twitter.gif" width="16" height="16" alt="Twitter"/></a></li>
+			<li><a href="http://youtube.com/njit" title="NJIT on YouTube"><img src="http://www.njit.edu/corporate/uicomponents/images/social/youtube.gif" width="16" height="16" alt="YouTube"/></a></li>
+			<li><a href="http://www.flickr.com/photos/njit" title="NJIT on Flickr"><img src="http://www.njit.edu/corporate/uicomponents/images/social/flickr.gif" width="16" height="16" alt="Flickr"/></a></li>
+		</ul>
+	</div>
+</footer>
+
+<script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/scripts/jquery.bgpos.js"></script>
+<script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/scripts/quickaccess.js"></script> 
+<!--<script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/jwplayer.js"></script> -->
+<script type="text/javascript" src="http://www.njit.edu/corporate/uicomponents/scripts/njit.js"></script>
+
+<!-- Start QuickAccess Links -->
+<div style="display:none;" id="quickaccess">
+	
+    <ul class="quicklinks">
+		<li><a href="http://www.njit.edu/about/key-contacts.php#address">Address<!--njit address, mailing address--></a></li>
+	    <li><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/StoreCatalogDisplay?storeId=10555&amp;langId=-1&amp;catalogId=10001">Bookstore</a><!--textbooks--></li>
+		<li><a href="http://www.njit.edu/about/visit/gettingtonjit.php">Directions<!--driving directions, getting to campus--></a></li>
+		<li><a href="http://www.njit.edu/about/visit/njit-maps.php">Maps<!--njit maps, campus maps, location--></a></li>
+		<li><a href="http://www.njit.edu/openhouse/">Open House<!--openhouse--></a></li>
+	    <li><a href="http://njitday.njit.edu">NJIT Day<!--njit day, homecoming, carnival, parent's weekend--></a></li>
+	    <li><a href="http://www.njit.edu/athletics/">Athletics<!--division 1, div1, div one, highlanders, sports, recreation, Naimoli--></a></li>
+   	    <li><a href="http://www.njit.edu/hackathon/">Hackathon 2011<!--elsevier, acm, sciverse--></a></li>
+   	    <li><a href="http://www.njit.edu/financialaid/howtoapply.php">FAFSA<!--financial aid, Free Application for Federal Student Aid--></a></li>
+    </ul>
+
+    <ul class="academics">
+	    <li><a href="http://www.njit.edu/academics/">Academics<!--majors, minors, academic programs, programs--></a></li>
+	    <li><a href="http://math.njit.edu/academics/undergraduate/index.php">Applied Math<!--mathematics, mathematical sciences--></a></li>
+		<li><a href="http://physics.njit.edu/academics/undergraduate/bs-appliedphysics.php">Applied Physics<!--physics, astronomy--></a></li>
+		<li><a href="http://math.njit.edu/academics/undergraduate/index.php">Applied Statistics<!--mathematics, mathematical sciences, statistics--></a></li>
+		<li><a href="http://architecture.njit.edu/academics/undergraduate/architecture/b-arch.php">Architecture</a></li>
+		<li><a href="http://cs.njit.edu/academics/undergraduate/bsbnfo.php">Bioinformatics</a><!--bioinfomatics--></li>
+   		<li><a href="http://biology.njit.edu/academics/undergraduate/bs-biology.php">Biology</a></li>
+        <li><a href="http://biomedical.njit.edu/academics/undergraduate/index.php">Biomedical Engineering</a></li>        
+    </ul>
+
+    <ul class="offices">
+	    <li><a href="http://www.njit.edu/admissions/">Admissions<!--apply, inquire, application, online application, visit, tour--></a></li>
+	    <li><a href="http://www.njit.edu/alumni/">Alumni Relations<!--boynton--></a></li>
+	    <li><a href="http://www.njit.edu/bursar/">Bursar<!--bursar,pay a bill,payment, business office--></a></li>
+	    <li><a href="http://help.njit.edu">Computing HelpDesk<!--password, forgot my password, reset my password, re-set my password, re set my password,IT, IST, helpdesk, help desk--></a></li>
+	    <li><a href="http://www.njit.edu/cds/">Career Development Services<!--jobs, internship, coop, co-op--></a></li>
+	    <li><a href="http://www.njit.edu/financialaid/">Financial Aid Services<!--finaid, fin aid, loans, scholarships, aid, cost--></a></li>
+	    <li><a href="http://www.njit.edu/humanresources/">Human Resources<!--jobs, employement, hr--></a></li>
+	    <li><a href="http://www.njit.edu/registrar/">Registrar<!--register, enroll--></a></li>
+	    <li><a href="http://www.njit.edu/reslife/">Residence Life<!--living on campus, dorms, oak, redwood, cypress, university center, university centre, dormatory, dormatories, laurel, housing, where to live, reslife--></a></li>
+   	    <li><a href="http://www.njit.edu/president/">Office of the President<!--robert altenkirch, bob altenkirch, chancellor--></a></li>
+	    <li><a href="http://www.njit.edu/provost/">Office of the Provost<!--ian gately, judith redling, judy redling--></a></li>
+    </ul>
+
+    <ul class="services">
+	    <li><a href="http://my.njit.edu">MyNJIT<!--highlander pipeline, pipeline, campus pipeline, portal--></a></li>
+	    <li><a href="http://www.njit.edu/registrar/calendars/">Academic calendars<!--calendar, schedule--></a></li>
+		<li><a href="http://www.njit.edu/registrar/schedules/">Course schedules</a></li>
+	    <li><a href="http://www.njit.edu/parking/">Parking<!--guest parking, event parking, where to park--></a></li>
+	    <li><a href="http://www.njit.edu/registrar/transcript/">Transcript requests</a></li>
+    </ul>
+
+</div>    
+<!-- end QuickAccess links -->
+<script>
+jQuery(document).ready(function() {
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+});
+</script></body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="needs_terminal" mtime="1379457291" type="bool" value="false"/>
+	<entry name="enabled" mtime="1379457291" type="bool" value="true"/>
+	<entry name="command" mtime="1379457291" type="string">
+		<stringvalue>/afs/cad.njit.edu/linux/firefox-16.0.1_64/firefox %s</stringvalue>
+	</entry>
+</gconf>

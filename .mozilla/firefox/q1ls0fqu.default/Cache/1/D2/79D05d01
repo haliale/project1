@@ -1,0 +1,372 @@
+﻿
+/* NJIT Javascript Effects (requires jQuery 1.4+) */
+/* by White Whale Web Services */
+/* Needs to be UTF-8 */
+
+// Welcome message:
+// var friendlymessage = '<strong>Notice something different?</strong> We've retooled NJIT's Web presence–or at least a big part of it! <a href="http://www.njit.edu/stratcomm/services/website/">Learn more about the new design and where we're going from here.</a>';
+var friendlymessage = '';
+var topThreeFix;
+var stories = [];
+jQuery.easing.def = 'easeOutSine';
+
+jQuery(function() {
+	// alert(window.location.hostname);
+	
+	// Nav highlighting
+	var stripIndex = new RegExp(/(?:\/)index.[a-z0-9]{1,5}$/i), // regular expression to strip out unneeded index.php
+		stripNonPath = new RegExp(/http:\/\/[^\/]*|\/?($|(#|\?).*)/ig), // regular expression to strip URL segments that don't appear in the path
+		path = window.location.pathname.replace(stripIndex,'').replace(/\/$/,''), // get the window path with the index file and trailing slash stripped
+		dir = path.substring(1).split('/')[0] || 'homepage', // get the top-level pathname of the current page
+		basehref = jQuery('base').attr('href') || '', // the page's base href, if any
+		isBaseSite = /^(?:w{3}\.)?njit.edu$/ig.test(window.location.hostname),
+		
+		// note: this was updated to not match subdomains (or really any domains except www.njit.edu and njit.edu)
+		//active = (window.location.href.match(/\/\/(?:[w]{3}\.)?njit\.edu/i)) ? jQuery('#navbar #nav-'+dir).find('a') : 'none', // and match any navbar items
+		active = jQuery('#navbar #nav-'+dir).find('a'), // and match any navbar items
+		pointer = jQuery('<div id="nav_pointer"><div id="nav_pointer_arrow"/></div>').insertAfter('#navbar ul'), // add the pointer (we use insertAfter instead of .appendTo(#navbar) due to an IE bug)
+		media = 'video,iframe,object,embed', // selector for embedded media that might slow down page animations
+		subnav = jQuery('#subnavigation'), // cache the subnav element
+		current = jQuery(); // the current subnav link
+	if(window.location.hash.indexOf('#/')==0) { // if the hash is a path
+		if(window.location.hash!='#/'+dir+'/') window.location.hash=''; // if it's for the current page, wipe the hash
+		else window.location = window.location.hash.substr(1); // otherwise, intercept and redirect the request
+	}
+	if(dir.indexOf('.')!==-1) { // if the dir gives us a file instead
+		dir = 'homepage'; // assume the homepage
+	}
+	
+	
+	if(active.length && isBaseSite) {
+		active.addClass('active'); // set the current navbar link to active
+		pointer.show().width(active.width()).css('left',active.position().left-13); // position the pointer
+	}
+	subnav.find('ul ul').hide(); // hide all the subnavigations
+	subnav.find('a').each(function() { // look up the current subnav link
+		var href = jQuery(this).attr('href'); // get the href
+		if(href.indexOf('/')!==0) href = basehref+href;
+		href = href.replace(stripIndex,'').replace(stripNonPath,''); // strip out any unneeded index references and the domain info/hash
+		if(href==path) { // if they now match
+			current = jQuery(this); // set the current pointer
+			return false; // break the loop, as we don't need to iterate through any more links
+		}
+	});
+	if(current.length) {
+		var breadcrumb = jQuery('.breadcrumb');
+		current.addClass('current').siblings('ul').show(); // and add the current class and show its children
+		current.parents('li').children('a').each(function() { // find the child
+			breadcrumb.append(' » ').append(jQuery(this).clone()); // add the link to the breadcrumb chain
+			jQuery(this).addClass('active'); // and activate the link
+		});
+		current.parents('ul').show(); // and show the whole tree
+		breadcrumb.find('a:last').addClass('current');
+	}
+	// Placeholders
+	jQuery('input[placeholder]').placeholder();
+	// Page transitions
+	if(jQuery('body').is('#homepage,.section-homepage')) { // homepage and corporate sites only
+	 	// Load two more stories
+		stories = [],
+			showTwo = function(list, resetv) {
+				if(!stories.length) { // if there are no stories
+					jQuery.get('http://www.njit.edu/corporate/uicomponents/includes/get_rss_feed.php',{url:'http://www.njit.edu/features/rss_hp.php',ts:new Date().getTime()},function(data) { // get the stories
+						stories = jQuery.makeArray(jQuery(data).find('item')); // as an array
+						showTwo(list);
+					},'xml');
+					return;
+				}
+				list.fadeTo(300,0,function() {
+					list.empty();
+					for(i=0;i<2&&stories.length;i++) { // twice
+						var story = jQuery(stories.shift());
+						list.append('<li><img src="'+story.find('image').text()+'" width="156" height="157" alt="'+story.find('title').text()+'"/><h3><a href="'+story.find('link').text()+'">'+story.find('title').text()+'</a></h3>'+story.find('description').text()+'</li>');
+					}
+					list.fadeTo(300,1);
+				});
+			};
+		jQuery('.loadmore .next').live('click',function(e) {
+			e.preventDefault();
+			showTwo(jQuery(this).parent().siblings('.newslist'));
+		});
+		// Allow you to click anywhere on featured news stories, calendar items
+		jQuery('.newslist li,.eventsblocks li').live('click',function() {
+			window.location = jQuery(this).find('a').attr('href');
+		});
+		// Page transitions
+		initPage(dir); // fire the page initialization event; if there's no dir, assume the body ID
+		if (isBaseSite) { active.addClass('current'); } // set the current navbar link to "current"
+		window.onpopstate = function(e) { // when going back in the history
+			jQuery('#navbar a[href='+e.state+']').click(); // its the same as clicking the link
+		}
+		var ie6 = jQuery.browser.msie&&jQuery.browser.version<7,
+			supportsHistory = typeof history.pushState=='function', // does the browser support the history API?
+			feature = jQuery('#feature .container'), // cache the location of feature div
+			content = jQuery('#content'), // and the main content div
+			window_width; // var to store the window width
+		jQuery(window).resize(function() { // when resizing the window
+			window_width = jQuery(window).width(); // update the width value
+		}).resize(); // and get it now
+		jQuery('#navbar a').click(function(e) { // when clicking a nav link
+			var link = jQuery(this);
+			if(link.hasClass('current')||ie6) return; // if it's already active or we're in IE6, do nothing
+			e.preventDefault(); // otherwise, cancel the click
+			link.blur(); // prevent the outline in Firefox
+			var index = link.addClass('active current').parent().index(), // add the active class and find its position
+				direction = (active.removeClass('active current').parent().index()<index ? 1 : -1), // to determine which direction to slide the content
+				href = link.attr('href'); // the content to load
+			active = link;
+			content.fadeTo(300,0); // fade out the content div
+			jQuery(media).hide(); // hide all media that might slow down the slide animation
+			feature.parent().animate({backgroundPositionX:index*-1000},1000); // animate the feature background
+			feature.children('.slide').animate({left:window_width*-direction},600,function() { // and slide out the top slide
+				jQuery(this).remove(); // then remove it from the DOM
+			});
+			pointer.animate({width:jQuery(this).width(),left:jQuery(this).position().left-13},600).css('overflow','visible'); // move the pointer with a visible overflow the whole time
+			jQuery.get(href,function(data) { // meanwhile, start ajaxing in the new page contents
+				var page = jQuery(data).filter('title,#feature,#content'),
+					slide = page.filter('#feature').find('.container .slide'), // get the slide contents
+					contents = page.filter('#content').html(), // and page content
+					title = page.filter('title').html(),
+					id = active.parent().attr('id').replace('nav-','');
+				if(!slide.length) slide = jQuery(data.replace(/[.\r\n]*?(<section id="feature">[.\r\n]*?<\/section>).[.\r\n]*/i,'$1')).find('.slide'); // if IE can't find the slide, help it out
+				slide.add(contents).find(media).hide(); // hide any new media that might slow down the slide animation
+				jQuery('body').attr('id',id); // set the body id
+				document.title = title || link.text()+' • NJIT'; // and page title
+				if(!supportsHistory) { // if there's no history API support, append a hash string
+					window.location.hash = '#'+href;
+				} else {
+					history.pushState(href,title,href); // otherwise, push the new history state
+				}
+				setTimeout(function() {
+					feature.append(slide.css({left:window_width*direction})); // add the slide, positioned just offscreen
+					slide.animate({left:0},600,function() { // then slide in the slide
+					//	document.title = title || link.text()+' • NJIT'; // we re-set the page title again, since it gets lost in IE, mysteriously
+						slide.find(media).show(); // bring back any hidden media
+						initPage(id); // and finally fire the page initialization event
+					});  
+					content.html(contents).fadeTo(300,1,function() { // replace the contents with the new content and fade it in
+						content.find(media).show(); // bring back any hidden media
+					});
+				},400);
+			},'text');
+		});
+	}
+	// Popular links
+	var popular = jQuery('#popularlinks'),
+		popular_height = popular.outerHeight(),
+		header = jQuery('#header');
+	jQuery('#popular_link').toggle(function() {
+		header.animate({marginTop:popular_height},600);
+		popular.slideDown(600);
+	},function() {
+		header.animate({marginTop:0},600);
+		popular.slideUp(600);
+	});
+	// Quickaccess
+	if(jQuery.fn.quickaccess) {
+		jQuery('#search_query').quickaccess({links:[{selector:'#quickaccess .quicklinks a',title:'Quick Links:'},{selector:'#quickaccess .academics a',title:'Academics:'},{selector:'#quickaccess .offices a',title:'Offices:'},{selector:'#quickaccess .services a',title:'Services:'}],sort:true,removeDuplicates:true,forceSelect:false});		
+	}
+	// Audience dropdown
+	var audiences = jQuery('#audiences ul');
+	jQuery('<a id="audiences_arrow" href="#"></a>').insertAfter(audiences).hover(function(e) {
+		audiences.addClass('hover');
+	},function(e) {
+		audiences.removeClass('hover');
+	}).bind('focusin click',function(e) {
+		e.preventDefault();
+		if(audiences.hasClass('active')) audiences.animate({height:20},300,function() { audiences.removeClass('active'); });
+		else audiences.addClass('active').animate({height:audiences.children().length*22},300);
+	});
+	audiences.hover(function() {},function() {
+		audiences.animate({height:20},300,function() { audiences.removeClass('active'); });
+	}).focus(function() {
+		audiences.siblings('#audiences_arrow').click();
+	});
+	// Header dropdowns
+	jQuery('#topthree_header').bind('focusin click', function() {
+		jQuery(this).siblings('ul').slideDown();
+		return false;
+	});
+	
+	jQuery('#topthree').bind('mouseleave', function() {  // removed focusout, see below
+		jQuery(this).children('ul').slideUp();
+	});
+	
+	/**
+	 * focusout fix - 4/8/2011
+	 * IE is having trouble with focusout and recognizing links within this
+	 * unordered list. This solution is a roundabout way of getting the same
+	 * result.
+	 */
+	jQuery('#topthree ul a')
+		.blur(function() {  // when we blur any link in the topthree ul...
+			topThreeFix = setTimeout(function() {  // set set a timeout...
+				jQuery('#topthree ul').slideUp();  // that will slide up the ul...
+			}, 300);  // after a couple of milliseconds...
+		})
+		.focus(function() {  // unless another link in the ul is focused on...
+			clearTimeout(topThreeFix);  // in which case we clear the timeout
+		});
+	
+	var schoolbar_nav = jQuery('#schoolbar_nav');
+	jQuery('#schoolbar_name').click(function(e) {
+		if(!schoolbar_nav.is(':visible')) e.preventDefault();
+	});
+	jQuery('#schoolbar').bind('focusin click',function(e) {
+		schoolbar_nav.slideDown();
+	}).bind('focusout mouseleave',function() {
+		schoolbar_nav.slideUp();
+	});
+	// Stacks
+	// Sliders:
+	jQuery('.slider').each(function() {
+		var slider = jQuery(this).find('.slider_contents'),
+			next = jQuery('<a href="#" class="slider_next"><span class="disabled">More</span></a>').insertAfter(slider.parent()),
+			prev = jQuery('<a href="#" class="slider_prev"><span class="disabled">Previous</span></a>').insertBefore(slider.parent()),
+			width = slider.children().length*326,
+			pos = 0;
+		next_status = jQuery('.slider_next span');
+		prev_status = jQuery('.slider_prev span');
+		slider.width(width);
+		if(width>980) next_status.removeClass('disabled');
+		next.click(function() {
+			if(next_status.is('.disabled')) return false;
+			pos-=326;
+			slider.animate({left:pos});
+			next_status.toggleClass('disabled',pos<=-width+980);
+			prev_status.removeClass('disabled');
+			return false;
+		});
+		prev.click(function() {
+			if(prev_status.is('.disabled')) return false;
+			pos+=326;
+			slider.animate({left:pos});
+			prev_status.toggleClass('disabled',pos>=0);
+			next_status.removeClass('disabled');
+			return false;
+		});
+	});
+	// Resources:
+	jQuery('.resources .item').click(function() {
+		jQuery(this).find('a').click();
+	});
+	jQuery('.accordion .item').each(function() {
+	var item = jQuery(this);
+	jQuery(this).find('img').click(function() {
+	item.siblings().animate({width:0},500);
+	item.animate({width:390},500);
+	});
+});
+	/*// Friendly message
+	if(friendlymessage&&!getCookie('closed_friendlymessage')) {
+		var message = jQuery('<div id="friendlymessage"><div class="container">'+friendlymessage+'</div><a href="#" id="friendlymessage_close" title="dismiss this message">×</a></div>').prependTo('body');
+		message.find('#friendlymessage_close').click(function(e) {
+			e.preventDefault();
+			popular.css('margin-top','');
+			message.remove();
+			setCookie('closed_friendlymessage',true,60*60*24*7); // expires in one week
+		});
+		popular.css('margin-top',message.outerHeight());
+	}*/
+});
+
+jQuery.fn.extend({ // add plugins
+	placeholder:function(options) { // bootstrap HTML5 placeholder attributes for browsers that donâ€™t support it
+		options = options || {};
+		var s = {
+			style:options.style || 'lw_placeholder', // the class to add when the element is operating as a placeholder
+			clear:options.clear || false // the elements which, when clicked, should wipe the placeholder
+		};
+		return this.each(function() { // with each matched element
+			var self = jQuery(this);
+			if (this.placeholder && 'placeholder' in document.createElement(this.tagName)) return; // if the browser supports placeholders for this element, abort
+			if(self.data('placeholder')) { // if a placeholder has already been set on this element
+				return; // abort to avoid double-binding
+			}
+			self.data('placeholder',true); // flag this element as having a placeholder, so we'll never double-bind
+			var placeholder = self.attr('placeholder'),
+				clear = function() { // to clear the placeholder
+					if(self.val()==placeholder) { // if the text is the placeholder
+						self.removeClass(s.style).val(''); // blank the text and remove the placeholder style
+					}
+				};
+			self.focus(clear)
+				.blur(function() {
+					var val = self.val();
+					if(!val||val==placeholder) { // if thereâ€™s no text, or the text is the placeholder
+						self.addClass(s.style).val(placeholder); // set the text to the placeholder and add the style
+					}
+				}).blur(); // and do it now
+			self.parents('form').submit(clear);
+			jQuery(s.clear).click(clear);
+		});
+	}
+});
+
+function getCookie(name) {
+	var cookieValue = '';
+    if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+		for (var i = 0; i < cookies.length; i++) {
+			var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+function setCookie(name,value,expires,path,domain,secure) { // 'expires' in seconds
+	var today = new Date();
+	today.setTime(today.getTime());
+	var expires_date = new Date(today.getTime() + (expires*1000));
+	document.cookie = name + "=" +escape(value) + ((expires) ? ";expires=" + expires_date.toGMTString() : "") + ((path) ? ";path=" + path : "") + ((domain) ? ";domain=" + domain : "") +((secure) ? ";secure" : "");
+}
+
+function initPage(id) { // initialize a page; id is the page id
+	jQuery('video').each(function() { // with each video on this page
+		jwplayer(this).setup({
+			flashplayer:'/scripts/videojs/player.swf', // SWF
+			id:jQuery(this).attr('id'), // each player needs a unique ID
+			file:jQuery(this).find('source').attr('src'), // and the video file src
+			image:jQuery(this).attr('poster') // poster frame, specified as <video poster="image.jpg"/>
+			
+   		});
+	});
+	if(pageActions[id]) {  // and if there's a callback for this slide, fire it
+		pageActions[id]();
+	}
+}
+
+var pageActions = {
+	'homepage':function() {
+		stories = [];
+		jQuery('#news .loadmore .next').click(); // on load, simulate a click on "Show next two items" to queue the first two items
+		jQuery('#video').bind('click', function () {
+			jQuery(this).empty();
+			jQuery(this).append('<object width="640" height="312"><param name="movie" value="http://www.youtube.com/v/7zb6Gx9m3yg?version=3&hl=en_US&autoplay=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/7zb6Gx9m3yg?version=3&hl=en_US&autoplay=1&rel=0" type="application/x-shockwave-flash" width="640"  height="312" allowscriptaccess="always" allowfullscreen="true"></embed></object>');		
+		});
+	},
+	'about':function() { },
+	'admissions':function() { },
+	'academics':function() { },
+	'research':function() { },
+	'campuslife':function() { },
+	'athletics':function() { },
+	'continuing':function() {
+	
+	
+	},
+	'beyond':function() { },
+	'news':function() { },
+	'giving':function() { }
+};
+
+
+function recordOutboundLink(link, category, action) {
+    _gat._getTrackerByName()._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100);
+  }

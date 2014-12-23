@@ -1,0 +1,68 @@
+*{
+	background-color: #FFF8F8;
+}
+
+#logo{
+	
+	
+	
+}
+	
+#slogan h1{
+	font-family:damion;
+	padding:none;
+	border:0px;
+	
+	
+}
+
+nav #navigationBar {
+  	 display: block;
+	 text-align: center;
+  
+  
+  
+  
+}
+	
+
+ul#main_menu li {
+	display:block;
+	list-style:none;
+	float:left;
+}
+
+ul#main_menu li a {
+	display:inline-block;
+	background-color:#FFFFFF;
+	border: 2px solid;
+	padding:3px;
+	border-radius: 5px 5px;
+	color:#8E7B7B;
+	text-decoration:none;
+}
+ ul#main_menu li a:hover{
+	 background-color:#FCB9B9;
+	 border: 3px solid;
+ }
+
+#bottomNav {
+	
+	position: relative;
+	clear:both;
+	
+	
+	}
+	
+	
+
+		
+ 
+	
+	
+	
+	
+	
+	
+	
+	
